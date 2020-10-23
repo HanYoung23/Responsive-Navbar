@@ -1,13 +1,8 @@
-document.querySelector("body").innerHTML = `<div class="tag"></div>`;
+const toggleBtn = document.querySelector(".navbar__toggleBtn");
+const menu = document.querySelector(".navbar__menu");
+const icons = document.querySelector(".navbar__icons");
 
-const tag = document.querySelector(".tag");
-function updateTag() {
-  tag.innerHTML = `
-  window.screen: ${window.screen.width}, ${window.screen.height} <br/>
-  window.outer: ${window.outerWidth}, ${window.outerHeight} <br/>
-  window.inner: ${window.innerWidth}, ${window.innerHeight} <br/>
-  documentElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`;
-}
-
-window.addEventListener("resize", () => updateTag());
-updateTag();
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  icons.classList.toggle("active");
+});
