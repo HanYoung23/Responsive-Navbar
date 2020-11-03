@@ -1,5 +1,5 @@
 # Responsive Navbar
-## 반응형 Navbar
+## 반응형 Navbar입니다. (프로젝트 기간 - 2일)
 #HTML #CSS #Javascript
 
 체험하기 -> https://hanyoung23.github.io/Responsive-Navbar/.
